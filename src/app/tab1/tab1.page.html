@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Categorias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ng-container *ngFor="let item of listaCategorias; let i = index">
+        <ion-col size="12" size-lg="3" size-md="4" sime-sm="4" size-xs="6">
+          <ion-card >
+            <img (click)="abrirmodalDetalle(item)" alt="Silhouette of mountains" [src]="item.image"/>
+            <ion-card-header>
+              <ion-card-title>ID {{item.id}}</ion-card-title>
+             
+              <ion-button (click)="compartirCategoria(item)">
+                Compartir
+              </ion-button>
+            
+            </ion-card-header>
+          </ion-card>
+        </ion-col> 
+      </ng-container>
+    </ion-row>
+  </ion-grid> 
+
+</ion-content>

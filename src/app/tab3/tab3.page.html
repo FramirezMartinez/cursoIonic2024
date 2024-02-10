@@ -1,0 +1,32 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Usuarios
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ng-container *ngFor="let item of listaUsuarios; let i = index">
+        <ion-col size="12" size-lg="3" size-md="4" sime-sm="4" size-xs="6">
+          <ion-card (click)="abrirmodalDetalle(item)" class="avatar-card">
+            <div class="avatar-container">
+              <img alt="Avatar" [src]="item.avatar" class="avatar-img" />
+            
+            </div>
+            
+            <ion-card-header>
+              <ion-card-title style="color:black"> {{ item.name }}</ion-card-title>
+            </ion-card-header>
+            
+          </ion-card>
+        </ion-col>
+      </ng-container>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

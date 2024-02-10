@@ -1,0 +1,19 @@
+.avatar-card {
+  text-align: center; /* Alinea el contenido en el centro */
+  background: aliceblue;
+}
+
+.avatar-container {
+  border-radius: 50%; /* Hace que el contenedor del avatar sea redondo */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  width: 100px; /* Ajusta el tamaño del contenedor del avatar según tus necesidades */
+  height: 100px; /* Ajusta el tamaño del contenedor del avatar según tus necesidades */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Agrega una sombra suave */
+}
+
+.avatar-img {
+   
+  width: 100%; /* Ajusta la imagen del avatar para que llene completamente el contenedor */
+  height: auto; /* Ajusta la altura de la imagen automáticamente según el ancho */
+}

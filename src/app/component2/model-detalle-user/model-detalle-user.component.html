@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+       <ion-title>Detalle usuarios  </ion-title>
+    <ion-buttons slot="end">
+      <ion-button style="background-color: brown; border-radius: 10px;" (click)="cerrarModal()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" >
+  <ion-card style="background-color: white; margin:auto;  border-radius: 5px;">
+    <ion-card-header>
+      <ion-avatar style="margin:auto; width: 50%; height: 50%; ">
+        <img alt="Silhouette of a person's head" [src]="usuario.avatar" />
+      </ion-avatar>
+     
+      <ion-card-title style="text-align: center; color: black;">Nombre: {{usuario.name}}</ion-card-title>
+     
+      <ion-card-content style="color:black">
+        <h2 style="text-align: center;" > Rol: {{ usuario.role }}</h2>
+      </ion-card-content>
+       
+      <ion-card-subtitle style="text-align: center; color: black;">Correo: {{usuario.email}}</ion-card-subtitle>
+    
+    </ion-card-header>
+  
+  </ion-card>
+
+
+</ion-content>
